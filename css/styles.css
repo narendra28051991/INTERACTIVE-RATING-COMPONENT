@@ -61,6 +61,11 @@ p, .star, button {
     background: hsl(217, 21%, 31%);
 }
 
+.star:hover {
+    background: hsl(216, 12%, 54%);
+    color: hsl(217, 21%, 31%);
+}
+
 .star.selected {
     background: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
