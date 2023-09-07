@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr;
+    background: hsl(216, 12%, 8%);
+}
+
+p, .star, button {
+    font-size: 15px;
+}
+
+/* container */
+.rating-container, .active-state {
+    margin: auto;
+    max-width: 400px;
+    padding: 30px;
+    background: hsl(213, 19%, 18%);
+    border-radius: 20px;
+}
+
+.question, .thank-you {
+    margin-top: 30px;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+.comment, .thank-you-comment {
+    margin-top: 20px;
+    font-weight: 400;
+    color: hsl(217, 12%, 63%);
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.star {
+    text-align: center;
+    font-weight: 400;
+    cursor: pointer;
+    color: hsl(216, 12%, 54%);
+    transition: all 500ms;
+}
+
+.icon-star, .star {
+    width: 50px;
+    height: 50px;
+    padding: 16px;
+    border-radius: 50%;
+    background: hsl(217, 21%, 31%);
+}
+
+.star.selected {
+    background: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+button {
+    width: 100%;
+    background: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    padding: 10px;
+    font-weight: 700;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+.active-state {
+    display: none;
+    text-align: center;
+}
+
+.active-message {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background: hsl(217, 21%, 31%);
+    color: hsl(25, 97%, 53%);
+    border-radius: 50px;
+}
+
+/* default */
+.attribution {
+    font-size: 11px; text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* mobile */
+@media (max-width: 375px) {
+    .rating-container, .active-state {
+        max-width: 335px;
+        padding: 20px;
+    }
+}
