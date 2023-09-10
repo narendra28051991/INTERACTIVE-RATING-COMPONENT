@@ -1,0 +1,66 @@
+#### 1. Problem Understanding:
+
+In this project, the goal was to create an interactive rating component for user feedback.
+The component needed to allow users to select a rating from 1 to 5 stars and then submit their choice.
+Additionally, an active state with a thank-you message should appear after submission.
+
+
+#### 2. Approach:
+
+Vanilla JavaScript:
+I chose to use plain JavaScript (vanilla JS) to build the interactive rating component.
+This decision was made to keep the project lightweight and not rely on additional libraries or frameworks.
+
+Custom Component:
+I created a custom rating component from scratch to ensure complete control over its functionality and appearance.
+This allowed me to tailor it precisely to the project's requirements.
+
+DOM Manipulation:
+To dynamically generate the rating stars, I used DOM manipulation techniques.
+This allowed me to create and attach the star elements to the DOM based on the specified number of stars.
+
+Event Handling:
+Each star has a click event listener that captures user clicks and updates the selected rating.
+This approach ensures that the component is responsive to user interactions.
+
+CSS Styling:
+I styled the component using CSS to control its visual presentation.
+This approach allowed me to apply custom styles while keeping the code clean and organized.
+
+
+#### 3. Benefits of the Chosen Approach:
+
+Lightweight:
+By avoiding the use of a front-end framework, the component is lightweight and doesn't require users to download unnecessary code.
+This can lead to improved page load times and a better user experience.
+
+Full Control:
+Building the component from scratch provided complete control over its behavior and appearance.
+I could implement custom interactions and animations tailored to the project's specific needs.
+
+Learning Opportunity:
+Developing without a framework offered a valuable learning experience.
+It allowed me to deepen my understanding of core web technologies and become more proficient in JavaScript and DOM manipulation.
+
+Simplicity:
+For a relatively small and straightforward component like the interactive rating, a custom solution was simpler and more efficient than setting up and configuring a larger front-end framework.
+This approach streamlined development.
+
+
+#### 4. Challenges Faced:
+
+During development, I encountered a challenge related to ensuring that only one star was selected at a time.
+To address this, I implemented logic to unselect other stars when a user clicked on a new one.
+This challenge highlighted the importance of careful event handling.
+
+
+#### 5. Future Considerations:
+
+In the future, I would consider adding the ability to capture and submit user comments along with the rating, making the feedback process even more comprehensive.
+Additionally, I might explore options for accessibility enhancements, such as keyboard navigation.
+
+
+#### 6. Conclusion:
+
+Overall, the chosen approach allowed me to create a lightweight, fully customizable, and responsive interactive rating component that meets the project's requirements effectively.
+It provided a valuable learning experience and demonstrated the advantages of building custom components for specific use cases.
